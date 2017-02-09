@@ -1,0 +1,60 @@
+Start by showing basic invocation, running M2, creating integers, polynomials
+
+
+
+Example 0
+
+Show
+
+1+1
+help "help"
+help "ZZ"
+help "QQ"
+gcd(100,12)
+
+loadPackage "SimplicialComplexes"
+help "SimplicialComplexes"
+
+Now I could continue to just write code here, but there's two annoyances, if you mess up it's hard to fix, and if you close the program, you lose your work, so instead, we 
+
+like any decent programming language, you can define functions, the notation is as follows
+
+f = (a,b) -> (a^2+b^2)
+
+you can use semicollons to separate lines
+
+g = (a,b) -> (
+u := max(a,b);
+l := min(a,b);
+u-l)
+
+Note the difference between this and 
+
+g' = (a,b) -> (
+u := max(a,b);
+l := min(a,b);
+u-l;)
+
+you can use return to finish a function early, for example
+
+h = (a,b) -> (
+if a==0 then return b;
+a+b)
+
+Note that we could have instead written
+
+h = (a,b) -> (
+if a==0 then b
+else a+b)
+
+
+Task 1
+
+Write a function to compute the the average of the first n fibonacci numbers. Note that you might have to write more than one function.
+
+Now use this to compute the average of the first 10 fibonacci numbers
+
+
+Task 3, write a function that generates 10 random graphs and computes the average first homology.
+
+Task 4, 
