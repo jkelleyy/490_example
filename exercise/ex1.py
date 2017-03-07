@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 
 #Example code for problem 1 in python
 
